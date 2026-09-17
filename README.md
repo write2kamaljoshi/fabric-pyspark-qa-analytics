@@ -20,33 +20,39 @@ The solution loads test execution data into a Fabric Lakehouse, performs data an
 
 ## Project Assets
 
-- PySpark Notebook: `qa_test_analytics.ipynb`
+- PySpark Notebook: `qa_test_analysis.ipynb`
 - Microsoft Fabric Lakehouse
-- Analytics Visualizations
-- Sample QA Test Execution Dataset
+- Synthetic QA Test Execution Dataset
 - Lakehouse Tables
+- Build-wise Quality Analysis
+- Top Failing Tests Analysis
+- Slowest Tests Analysis
+- Visualizations and Charts
 
 ---
 
 ## Architecture
 
 ```text
-Test Results CSV
-        ↓
-Fabric Lakehouse
-        ↓
+Initial Test Results CSV
+            ↓
+Microsoft Fabric Lakehouse
+            ↓
 PySpark Notebook
-        ↓
-Data Transformations
-        ↓
-Build Quality Analysis
-        ↓
-Top Failing Tests Analysis
-        ↓
-Slowest Tests Analysis
-        ↓
-Lakehouse Tables
-        ↓
+            ↓
+Data Exploration & Validation
+            ↓
+Synthetic QA Test Dataset Generation
+            ↓
+test_executions Lakehouse Table
+            ↓
+PySpark Transformations & Aggregations
+            ├── Build-wise Pass Percentage
+            ├── Top Failing Tests Analysis
+            └── Slowest Tests Analysis
+            ↓
+Analytics Tables
+            ↓
 Charts & Visualizations
 ```
 
@@ -170,14 +176,16 @@ Average execution duration analysis used to identify test execution bottlenecks 
 ---
 ## Project Workflow
 
-1. Upload QA test execution data into Microsoft Fabric Lakehouse.
-2. Read the data using PySpark DataFrames.
-3. Perform data transformations and aggregations.
-4. Calculate build-level quality KPIs.
-5. Identify top failing tests.
-6. Analyze average test execution duration.
-7. Save processed datasets as Lakehouse tables.
-8. Generate visualizations for reporting and analysis.
+1. Created a Microsoft Fabric workspace and Lakehouse.
+2. Uploaded sample QA test execution data as a CSV file.
+3. Read and analyzed the CSV using PySpark DataFrames.
+4. Generated a synthetic QA test execution dataset using PySpark.
+5. Persisted the dataset as a Lakehouse table (`test_executions`).
+6. Performed build-wise quality analysis.
+7. Identified top failing test cases.
+8. Calculated average execution duration for each test case.
+9. Created visualizations for quality reporting and analysis.
+10. Stored aggregated results in Lakehouse tables for reuse.
 
 ---
 
