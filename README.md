@@ -139,7 +139,7 @@ Through this project I gained hands-on experience with:
 
 ### Lakehouse
 
-screenshots/lakehouse.png
+![Lakehouse](screenshots/lakehouse.png)
 
 The Microsoft Fabric Lakehouse used to store raw files and processed tables.
 
@@ -147,7 +147,7 @@ The Microsoft Fabric Lakehouse used to store raw files and processed tables.
 
 ### Build-wise Pass Percentage Analysis
 
-screenshots/build-summary.png
+![Build-wise Pass Percentage Analysis](screenshots/build-summary.png)
 
 Build quality analysis showing total tests, passed tests, and pass percentage for each build.
 
@@ -155,7 +155,7 @@ Build quality analysis showing total tests, passed tests, and pass percentage fo
 
 ### Top Failing Tests
 
-screenshots/top-failing-tests.png
+![Top Failing Tests](screenshots/top-failing-tests.png)
 
 Analysis of test cases with the highest number of failures, helping identify failure hotspots.
 
@@ -163,11 +163,11 @@ Analysis of test cases with the highest number of failures, helping identify fai
 
 ### Slowest Tests Analysis
 
-screenshots/slowest-tests.png
+![Slowest Tests Analysis](screenshots/slowest-tests.png)
 
 Average execution duration analysis used to identify test execution bottlenecks and optimization opportunities.
----
 
+---
 ## Project Workflow
 
 1. Upload QA test execution data into Microsoft Fabric Lakehouse.
