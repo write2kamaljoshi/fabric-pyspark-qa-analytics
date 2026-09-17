@@ -135,18 +135,19 @@ Through this project I gained hands-on experience with:
 - Analytical Dashboard Development
 
 ---
-
 ## Screenshots
 
 ### Lakehouse
 
-![Lakehouse](screenshots/lakehouse.pngft Fabric Lakehouse used to store raw files and processed tables.
+screenshots/lakehouse.png
+
+The Microsoft Fabric Lakehouse used to store raw files and processed tables.
 
 ---
 
 ### Build-wise Pass Percentage Analysis
 
-![Build-wise Pass Percentageg
+screenshots/build-summary.png
 
 Build quality analysis showing total tests, passed tests, and pass percentage for each build.
 
