@@ -159,11 +159,27 @@ Build quality analysis showing total tests, passed tests, and pass percentage fo
 
 ---
 
+### Build-wise Pass Percentage Chart
+
+![Build-wise Pass Percentage Chart](screenshots/build-pass-percentage-chart.png)
+
+Visualization showing pass percentage trends across different builds.
+
+---
+
 ### Top Failing Tests
 
 ![Top Failing Tests](screenshots/top-failing-tests.png)
 
 Analysis of test cases with the highest number of failures, helping identify failure hotspots.
+
+---
+
+### Failing Tests Chart
+
+![Failing Tests Chart](screenshots/failing-tests-chart.png)
+
+Visualization highlighting the test cases with the highest number of failures.
 
 ---
 
